@@ -94,7 +94,7 @@ body header ul li a {
         SECTION 1 (h1,bg-image)
 ===========================================*/
 #img__heading {
-    height: 35vh;
+    height: 35%;
     margin-top: 15vh;
 }
 
@@ -102,13 +102,13 @@ body header ul li a {
     font-family: Graphik-Regular;
     font-size: 2rem;
     text-align: center;
-
+    margin-bottom: 10%;
 }
 
 #img__heading img {
-    object-fit: contain;
-    height: 100%;
+    object-fit: fill;
     width: 100%;
+    
 }
 
 /*===========================================
@@ -118,21 +118,23 @@ body header ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 10vh;
+    min-width: 100px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 10%;
+
 }
 
 #paragraph__price p:nth-of-type(1) {
     font-family: Graphik-Medium;
     font-size: 1.2rem;
-    width: 65%;
 }
 
 #paragraph__price .price {
     display: flex;
     flex-direction: column;
-    width: 17%;
-    margin-top: 5vh;
+    width: 37%;
+    margin-top: 10%;
 }
 
 #paragraph__price .price p:nth-of-type(1) {
@@ -146,6 +148,7 @@ body header ul li a {
 }
 
 /*===========================================
+        DELIVERABLES
         ARTICLE (img, paragraph * 3)
 ===========================================*/
 #deliverables {
@@ -183,7 +186,8 @@ body header ul li a {
     font-family: Theinhardt;
     font-size: 1.2rem;
     text-align: center;
-    margin: 2vh 0 7vh 0;
+    max-width: 200px;
+    margin: 2% auto 8% auto;
 }
 
 /*===========================================
@@ -197,7 +201,8 @@ body header ul li a {
     background-color: #dee0e2;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 10% auto 0 auto;
+    padding-bottom: 4vh;
 }
 
 #img__list img {
@@ -207,7 +212,7 @@ body header ul li a {
 }
 
 #img__list .heading__list {
-    width: 80%;
+    width: 70%;
     margin-left: 10%;
 }
 
@@ -217,7 +222,8 @@ body header ul li a {
     font-size: 3rem;
 }
 #img__list .heading__list ol {
-    margin-left: 4vw;
+    margin-bottom: 20%;
+    margin-left: 15%;
 }
 
 #img__list .heading__list ol li {
@@ -226,19 +232,14 @@ body header ul li a {
     margin-bottom: 1vh;
 }
 
-#img__list .heading__list h2:nth-of-type(2) {
-    margin: 10vh 0 2vh 0;
-    font-family: TiemposHeadline-Semibold;
-    font-size: 3rem;
-}
-
 #img__list .heading__list p {
     font-family: Theinhardt;
     font-size: 1.2rem;
-    margin: 0 0 7vh 4vw;
+    margin-left: 9%;
 }
 
 /*===========================================
+            CRITIQUE
             SECTION: 
             bg-img, h1 p*2, img
 ===========================================*/
@@ -248,7 +249,7 @@ body header ul li a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 7vh;
+    margin-top: 15%;
 }
 
 #critique div:nth-of-type(1) {
