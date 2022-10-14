@@ -1,0 +1,334 @@
+/*============================================
+Colors: 
+#2B2C2E 
+#9FA2A7 
+#27282A 
+#848689 
+#3D3E41 
+#fff
+
+Fonts: 
+Graphik,
+TiemposHeadline,
+Theinhardt
+===========================================*/
+
+/*===============GENERAL===================*/
+@font-face {
+    font-family: Graphik-Regular;
+    src: url("../font/Graphik-Regular.woff");
+}
+
+@font-face {
+    font-family: Graphik-Medium;
+    src: url("../font/Graphik-Medium.ttf");
+}
+
+@font-face {
+    font-family: Theinhardt;
+    src: url("../font/Theinhardt-Lt.woff");
+}
+
+@font-face {
+    font-family: TiemposHeadline-Semibold;
+    src: url("../font/TiemposHeadline-Semibold.woff");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+h1,
+h2 {
+    font-family: TiemposHeadline-Semibold;
+}
+
+/*===========================================
+                    HEADER
+===========================================*/
+body header {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0 7vh 0;
+}
+
+body header ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+body header ul li a {
+    font-family: Graphik-Regular;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #27282A;
+}
+
+.logo__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo__btn p {
+    font-family: TiemposHeadline-Semibold;
+    font-size: 2.3rem;
+}
+
+.logo__btn button {
+    font-family: Graphik-Medium;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: .3vh 0;
+    border-radius: 4px;
+}
+
+/*===========================================
+        SECTION 1 (h1,bg-image)
+===========================================*/
+#img__heading {
+    height: 35vh;
+    margin-top: 15vh;
+}
+
+#img__heading h1 {
+    font-family: Graphik-Regular;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+#img__heading img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+/*===========================================
+        ARTICLE (paragraph * )3
+===========================================*/
+#paragraph__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+#paragraph__price p:nth-of-type(1) {
+    font-family: Graphik-Medium;
+    font-size: 1.2rem;
+    width: 65%;
+}
+
+#paragraph__price .price {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-top: 5vh;
+}
+
+#paragraph__price .price p:nth-of-type(1) {
+    font-family: TiemposHeadline-Semibold;
+    font-size: 4rem;
+}
+
+#paragraph__price .price p:nth-of-type(2) {
+    font-family: Theinhardt;
+    font-size: 1.2rem;
+}
+
+/*===========================================
+        ARTICLE (img, paragraph * 3)
+===========================================*/
+#deliverables {
+    width: 100%;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#deliverables img {
+    width: 60%;
+    height: auto;
+}
+
+#deliverables article {
+    width: 70%;
+    margin-top: 8vh;
+}
+
+#deliverables article h2 {
+    font-family: TiemposHeadline-Semibold;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#deliverables article div h3 {
+    font-family: Graphik-Medium;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#deliverables article div p {
+    font-family: Theinhardt;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2vh 0 7vh 0;
+}
+
+/*===========================================
+            SECTION: 
+            bg-color, img,
+            article (display:flex),
+            h2*2, ul-li*3, p
+===========================================*/
+#img__list {
+    width: 80%;
+    background-color: #dee0e2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#img__list img {
+    width: 60%;
+    height: auto;
+    margin: 4vh auto 0 auto;
+}
+
+#img__list .heading__list {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#img__list .heading__list h2 {
+    margin: 4vh 0 2vh 0;
+    font-family: TiemposHeadline-Semibold;
+    font-size: 3rem;
+}
+#img__list .heading__list ol {
+    margin-left: 4vw;
+}
+
+#img__list .heading__list ol li {
+    font-family: Theinhardt;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+}
+
+#img__list .heading__list h2:nth-of-type(2) {
+    margin: 10vh 0 2vh 0;
+    font-family: TiemposHeadline-Semibold;
+    font-size: 3rem;
+}
+
+#img__list .heading__list p {
+    font-family: Theinhardt;
+    font-size: 1.2rem;
+    margin: 0 0 7vh 4vw;
+}
+
+/*===========================================
+            SECTION: 
+            bg-img, h1 p*2, img
+===========================================*/
+#critique {
+    background-image: url("../img/28.png");
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 7vh;
+}
+
+#critique div:nth-of-type(1) {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#critique div:nth-of-type(1) h1 {
+    font-family: TiemposHeadline-Semibold;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#critique div:nth-of-type(1) p {
+    text-align: center;
+    font-family: Theinhardt;
+    font-size: 1.3rem;
+}
+
+#critique div:nth-of-type(2) {
+    width: 70vw;
+    margin: 30vh auto 0 auto;
+}
+
+#critique div:nth-of-type(2) img {
+    object-fit: contain;
+    height: 80%;
+    width: 100%;
+}
+
+#critique div:nth-of-type(2) p {
+    text-align: center;
+    font-family: Theinhardt;
+    font-size: 1.3rem;
+    margin-top: 3vh;
+}
+
+/*===========================================
+            FOOTER: 
+            h2
+            img, p - link
+===========================================*/
+body footer {
+    width:  80%;
+    margin: 10vh auto 20vh auto;
+    border-top: 1px solid grey;
+}
+
+body footer h2 {
+    font-family: TiemposHeadline-Semibold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+body footer .img__p__link {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+body footer .img__p__link img {
+    width: 25px;
+    height: auto;
+}
+
+body footer .img__p__link p{
+    display: inline-block;
+    font-family: Theinhardt;
+    font-size: 1.2rem
+}
+
+body footer .img__p__link p a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/*===========================================
+=============================================
+                BREAKPOINTS
+=============================================
+============================================*/
