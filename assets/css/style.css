@@ -1,4 +1,5 @@
-/*============================================
+/*
+/**===============COLORS FONTS==============
 Colors: 
 #2B2C2E 
 #9FA2A7 
@@ -11,9 +12,12 @@ Fonts:
 Graphik,
 TiemposHeadline,
 Theinhardt
-===========================================*/
+===========================================
 
-/*===============GENERAL===================*/
+*=================GENERAL==================
+*/
+
+
 @font-face {
     font-family: Graphik-Regular;
     src: url("../font/Graphik-Regular.woff");
@@ -48,11 +52,19 @@ html {
 h1,
 h2 {
     font-family: TiemposHeadline-Semibold;
+    font-size: 2.5rem;
 }
 
-/*===========================================
-                    HEADER
-===========================================*/
+h3 {
+    font-family: Graphik-Medium;
+    font-size: 1.6rem;
+}
+
+/*
+?===========================================
+?                 HEADER
+?===========================================
+*/
 body header {
     display: flex;
     justify-content: space-around;
@@ -77,30 +89,30 @@ body header ul li a {
     justify-content: space-around;
 }
 
-.logo__btn p {
-    font-family: TiemposHeadline-Semibold;
-    font-size: 2.3rem;
-}
-
 .logo__btn button {
     font-family: Graphik-Medium;
     font-size: 1.2rem;
     background-color: white;
+    width: 50%;
     padding: .3vh 0;
     border-radius: 4px;
+    margin: 0 auto;
 }
 
-/*===========================================
-        SECTION 1 (h1,bg-image)
-===========================================*/
+/*
+?===========================================
+?        SECTION: img__heading 
+?           h1,bg-image
+?===========================================
+*/
 #img__heading {
     height: 35%;
     margin-top: 15vh;
 }
 
-#img__heading h1 {
+#img__heading p {
     font-family: Graphik-Regular;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -111,35 +123,34 @@ body header ul li a {
     
 }
 
-/*===========================================
-        ARTICLE (paragraph * )3
-===========================================*/
+/*
+?===========================================
+?        ARTICLE: paragraph__price 
+?           paragraph * 3
+?===========================================
+*/
 #paragraph__price {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-width: 100px;
-    max-width: 300px;
-    margin: 0 auto;
-    margin-top: 10%;
-
+    margin: 10% auto 0 auto;
 }
 
-#paragraph__price p:nth-of-type(1) {
+.text {
     font-family: Graphik-Medium;
     font-size: 1.2rem;
+    margin-bottom: 10%;
 }
 
 #paragraph__price .price {
     display: flex;
     flex-direction: column;
-    width: 37%;
-    margin-top: 10%;
+    /* margin: 10% auto 0 auto; */
 }
 
 #paragraph__price .price p:nth-of-type(1) {
     font-family: TiemposHeadline-Semibold;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #paragraph__price .price p:nth-of-type(2) {
@@ -147,10 +158,12 @@ body header ul li a {
     font-size: 1.2rem;
 }
 
-/*===========================================
-        DELIVERABLES
-        ARTICLE (img, paragraph * 3)
-===========================================*/
+/*
+?===========================================
+?        SECTION: deliverables
+?           img, paragraph * 3
+?===========================================
+*/
 #deliverables {
     width: 100%;
     margin-top: 20vh;
@@ -170,15 +183,11 @@ body header ul li a {
 }
 
 #deliverables article h2 {
-    font-family: TiemposHeadline-Semibold;
-    font-size: 4rem;
     text-align: center;
     margin-bottom: 10vh;
 }
 
 #deliverables article div h3 {
-    font-family: Graphik-Medium;
-    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -190,15 +199,17 @@ body header ul li a {
     margin: 2% auto 8% auto;
 }
 
-/*===========================================
-            SECTION: 
-            bg-color, img,
-            article (display:flex),
-            h2*2, ul-li*3, p
-===========================================*/
+/*
+?===========================================
+?          SECTION: img__list
+?             bg-color, img,
+?             article (display:flex),
+?             h2*2, ul-li*3, p
+?===========================================
+*/
 #img__list {
-    width: 80%;
-    background-color: #dee0e2;
+    width: 60%;
+    background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     margin: 10% auto 0 auto;
@@ -211,38 +222,41 @@ body header ul li a {
     margin: 4vh auto 0 auto;
 }
 
-#img__list .heading__list {
+#img__list article {
     width: 70%;
-    margin-left: 10%;
 }
 
-#img__list .heading__list h2 {
+.heading__list {
+    margin-left: 20%;
+}
+
+.heading__list h2 {
     margin: 4vh 0 2vh 0;
-    font-family: TiemposHeadline-Semibold;
-    font-size: 3rem;
 }
-#img__list .heading__list ol {
-    margin-bottom: 20%;
-    margin-left: 15%;
+.heading__list ol {
+    margin: 0 0 20% 12%;
+    width: 70%;
 }
 
-#img__list .heading__list ol li {
+.heading__list ol li {
     font-family: Theinhardt;
     font-size: 1.2rem;
     margin-bottom: 1vh;
 }
 
-#img__list .heading__list p {
+.heading__list p {
+    width: 70%;
     font-family: Theinhardt;
     font-size: 1.2rem;
     margin-left: 9%;
 }
 
-/*===========================================
-            CRITIQUE
-            SECTION: 
-            bg-img, h1 p*2, img
-===========================================*/
+/*
+?===========================================
+?            SECTION: critique  
+?               bg-img, h1 p*2, img
+?===========================================
+*/
 #critique {
     background-image: url("../img/28.png");
     width: 100%;
@@ -254,45 +268,45 @@ body header ul li a {
 
 #critique div:nth-of-type(1) {
     margin: 0 auto;
-    width: 60%;
+    width: 50vw;
 }
 
 #critique div:nth-of-type(1) h1 {
-    font-family: TiemposHeadline-Semibold;
-    font-size: 4rem;
     text-align: center;
     margin-bottom: 5vh;
 }
 
 #critique div:nth-of-type(1) p {
-    text-align: center;
     font-family: Theinhardt;
     font-size: 1.3rem;
 }
 
 #critique div:nth-of-type(2) {
-    width: 70vw;
-    margin: 30vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 10vh auto 0 auto;
 }
 
 #critique div:nth-of-type(2) img {
     object-fit: contain;
-    height: 80%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
 }
 
 #critique div:nth-of-type(2) p {
-    text-align: center;
     font-family: Theinhardt;
     font-size: 1.3rem;
     margin-top: 3vh;
 }
 
-/*===========================================
-            FOOTER: 
-            h2
-            img, p - link
-===========================================*/
+/*
+?===========================================
+?            FOOTER: 
+?               h2, img, p - link
+?===========================================
+*/
 body footer {
     width:  80%;
     margin: 10vh auto 20vh auto;
@@ -300,36 +314,225 @@ body footer {
 }
 
 body footer h2 {
-    font-family: TiemposHeadline-Semibold;
-    font-size: 3rem;
     text-align: center;
     margin-top: 7vh;
 }
 
-body footer .img__p__link {
+.img__p__link {
     text-align: center;
     margin-top: 2vh;
 }
 
-body footer .img__p__link img {
+.img__p__link img {
     width: 25px;
     height: auto;
+    margin-right: 2%;
 }
 
-body footer .img__p__link p{
+.img__p__link p {
     display: inline-block;
     font-family: Theinhardt;
     font-size: 1.2rem
 }
 
-body footer .img__p__link p a {
+.img__p__link p a {
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
 }
 
-/*===========================================
-=============================================
-                BREAKPOINTS
-=============================================
-============================================*/
+/*
+?==================================================
+?==================================================
+?                BREAKPOINTS
+?=================================================
+?=================================================
+*/
+
+@media only screen and (min-width: 768px) {
+    /*
+    *=================GENERAL====================
+    */
+
+    h1,
+    h2 {
+        font-family: TiemposHeadline-Semibold;
+        font-size: 3.5rem;
+    }
+    
+    h3 {
+        font-family: Graphik-Medium;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+
+    /*
+    ?===========================================
+    ?                 HEADER
+    ?===========================================
+    */
+    body header {
+        margin-top: 10vh;
+    }
+
+    body header ul li {
+        display: inline-block;
+        margin-left: 2vw;
+    }
+
+    .logo__btn button {
+        margin-top: 2vh;
+    }
+
+
+    /*
+    ?===========================================
+    ?        ARTICLE: paragraph__price 
+    ?           paragraph * 3
+    ?===========================================
+    */
+
+    #paragraph__price {  
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #paragraph__price .text {
+        width: 42%;
+        font-size: 1.8rem;
+        line-height: 3.5vh;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        width: 16vw;
+    }
+
+
+    /*
+    ?===========================================
+    ?        SECTION: deliverables
+    ?           img, paragraph * 3
+    ?===========================================
+    */
+    #deliverables {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #deliverables img {
+        width: 40%;
+        height: auto;
+    }
+
+    #deliverables article {
+        width: 40%;
+    }
+
+
+    /*
+    ?===========================================
+    ?          SECTION: img__list
+    ?             bg-color, img,
+    ?             article (display:flex),
+    ?             h2*2, ul-li*3, p
+    ?===========================================
+    */
+    #img__list {
+        width: 90%;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img__list article {
+        width: 50%;
+        
+    }
+
+    .heading__list {
+        margin-left: 5%;
+    }
+
+    .heading__list ol li {
+        font-size: 2rem;
+        margin-bottom: 3vh;
+    }
+
+    .heading__list p {
+        font-size: 2rem;
+    }
+
+    #img__list img {
+        width: 50%;
+        height: 50%;
+        margin: 4vh auto 0 auto;
+    }
+
+
+    /*
+    ?===========================================
+    ?            SECTION: critique  
+    ?               bg-img, h1 p*2, img
+    ?===========================================
+    */
+    #critique div:nth-of-type(1) p {
+        width: 40%;
+        font-size: 2rem;
+        line-height: 3vh;
+        margin: 0 auto;
+    }
+
+    #critique div:nth-of-type(1) {
+        margin-bottom: 45vh;
+    }
+
+    #critique div:nth-of-type(2) {
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    #critique div:nth-of-type(2) img {
+        height: 40%;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    #critique div:nth-of-type(2) p {
+        width: 20%;
+        font-size: 2rem;
+        line-height: 3vh;
+    }
+
+
+    /*
+    ?===========================================
+    ?            FOOTER: 
+    ?               h2, img, p - link
+    ?===========================================
+    */
+    body footer {
+        margin-top: 25vh;
+    }
+
+    .img__p__link img {
+        height: 60px;
+        width: 50px;
+        margin-right: 2%;
+    }
+
+    .img__p__link p {
+        font-size: 1.5rem;
+    }
+
+    .img__p__link p a {
+        font-size: 1.5rem;
+    }
+
+}
