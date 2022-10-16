@@ -61,8 +61,26 @@ h3 {
 }
 
 /*
+*===========================================
+! zentrieren vom button funktioniert nicht
+* body bg-color ändern bei click
+*/
+#img__heading button {
+    margin: 0 auto 5vh auto;
+}
+
+.bg__black {
+    background-color: black;
+    color: white;
+}
+
+/*
+*===========================================
+*/
+
+/*
 ?===========================================
-?                 HEADER
+*                 HEADER
 ?===========================================
 */
 body header {
@@ -86,7 +104,6 @@ body header ul li a {
 .logo__btn{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .logo__btn button {
@@ -101,8 +118,8 @@ body header ul li a {
 
 /*
 ?===========================================
-?        SECTION: img__heading 
-?           h1,bg-image
+*        SECTION: img__heading 
+*           h1,bg-image
 ?===========================================
 */
 #img__heading {
@@ -125,8 +142,8 @@ body header ul li a {
 
 /*
 ?===========================================
-?        ARTICLE: paragraph__price 
-?           paragraph * 3
+*        ARTICLE: paragraph__price 
+*           paragraph * 3
 ?===========================================
 */
 #paragraph__price {
@@ -160,8 +177,8 @@ body header ul li a {
 
 /*
 ?===========================================
-?        SECTION: deliverables
-?           img, paragraph * 3
+*        SECTION: deliverables
+*           img, paragraph * 3
 ?===========================================
 */
 #deliverables {
@@ -201,10 +218,10 @@ body header ul li a {
 
 /*
 ?===========================================
-?          SECTION: img__list
-?             bg-color, img,
-?             article (display:flex),
-?             h2*2, ul-li*3, p
+*          SECTION: img__list
+*             bg-color, img,
+*             article (display:flex),
+*             h2*2, ul-li*3, p
 ?===========================================
 */
 #img__list {
@@ -253,69 +270,81 @@ body header ul li a {
 
 /*
 ?===========================================
-?            SECTION: critique  
-?               bg-img, h1 p*2, img
+*            SECTION: critique  
+*               bg-img, h1 p*2, img
 ?===========================================
 */
 #critique {
-    background-image: url("../img/28.png");
+    /* background-image: url("../img/28.png");
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
-    margin-top: 15%;
-}
-
-#critique div:nth-of-type(1) {
-    margin: 0 auto;
-    width: 50vw;
+    background-position: center center; */
+    margin: 15% auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 51vw;
 }
 
 #critique div:nth-of-type(1) h1 {
+    margin-bottom: 3vh;
     text-align: center;
-    margin-bottom: 5vh;
 }
 
-#critique div:nth-of-type(1) p {
+#critique p {
     font-family: Theinhardt;
+    text-align: center;
     font-size: 1.3rem;
+    line-height: 3vh;
 }
 
-#critique div:nth-of-type(2) {
+#critique article {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    margin: 10vh auto 0 auto;
+    text-align: center;
 }
 
-#critique div:nth-of-type(2) img {
+#critique article .pic__28 {
     object-fit: contain;
-    height: 50%;
-    width: 50%;
-    margin-left: 20%;
+    width: 100%;
+    height: auto;
+    margin: 10% auto 10% auto;
 }
 
-#critique div:nth-of-type(2) p {
-    font-family: Theinhardt;
-    font-size: 1.3rem;
-    margin-top: 3vh;
+#critique article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+TODO: evtl. hover für den typen
+TODO: dann aber typ kleiner
+TODO: hover richtung zahl 28
+*/
+#critique article div img {
+    object-fit: contain;
+    width: 60%;
+    height: auto;
+    margin-bottom: 15%;
 }
 
 /*
 ?===========================================
-?            FOOTER: 
-?               h2, img, p - link
+*            FOOTER: 
+*               h2, img, p - link
 ?===========================================
 */
 body footer {
     width:  80%;
-    margin: 10vh auto 20vh auto;
+    margin: 0 auto 20vh auto;
     border-top: 1px solid grey;
 }
 
 body footer h2 {
     text-align: center;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .img__p__link {
@@ -344,7 +373,7 @@ body footer h2 {
 /*
 ?==================================================
 ?==================================================
-?                BREAKPOINTS
+*                BREAKPOINTS
 ?=================================================
 ?=================================================
 */
@@ -372,7 +401,7 @@ body footer h2 {
 
     /*
     ?===========================================
-    ?                 HEADER
+    *                 HEADER
     ?===========================================
     */
     body header {
@@ -391,8 +420,8 @@ body footer h2 {
 
     /*
     ?===========================================
-    ?        ARTICLE: paragraph__price 
-    ?           paragraph * 3
+    *        ARTICLE: paragraph__price 
+    *           paragraph * 3
     ?===========================================
     */
 
@@ -416,8 +445,8 @@ body footer h2 {
 
     /*
     ?===========================================
-    ?        SECTION: deliverables
-    ?           img, paragraph * 3
+    *        SECTION: deliverables
+    *           img, paragraph * 3
     ?===========================================
     */
     #deliverables {
@@ -437,10 +466,10 @@ body footer h2 {
 
     /*
     ?===========================================
-    ?          SECTION: img__list
-    ?             bg-color, img,
-    ?             article (display:flex),
-    ?             h2*2, ul-li*3, p
+    *          SECTION: img__list
+    *             bg-color, img,
+    *             article (display:flex),
+    *             h2*2, ul-li*3, p
     ?===========================================
     */
     #img__list {
@@ -477,48 +506,55 @@ body footer h2 {
 
     /*
     ?===========================================
-    ?            SECTION: critique  
-    ?               bg-img, h1 p*2, img
+    *           SECTION: critique  
+    *               bg-img, h1 p*2, img
     ?===========================================
     */
+    #critique {
+        width: 90vw;
+    }
+
     #critique div:nth-of-type(1) p {
-        width: 40%;
+        margin-top: 5vh;
+    }
+
+    #critique div:nth-of-type(1) p {
+        width: 65%;
+        text-align: center;
         font-size: 2rem;
-        line-height: 3vh;
+        line-height: 4vh;
         margin: 0 auto;
     }
 
-    #critique div:nth-of-type(1) {
-        margin-bottom: 45vh;
+    #critique article div {
+        flex-direction: row-reverse; 
+        align-items: flex-start; 
     }
 
-    #critique div:nth-of-type(2) {
-        flex-direction: row-reverse;
-        justify-content: center;
-        width: 100vw;
+    #critique article div img {
+        width: 43%;
+        height: auto;
+        margin-bottom: 15%;
+        margin-top: -16%;
+        margin-right: 7%;
     }
 
-    #critique div:nth-of-type(2) img {
-        height: 40%;
-        width: 40%;
+    #critique article div:nth-of-type(1) p {
+        text-align: left;
+        width: 45%;
+        font-size: 1.5rem;
+        margin-top: -10%;
         margin-left: 10%;
     }
 
-    #critique div:nth-of-type(2) p {
-        width: 20%;
-        font-size: 2rem;
-        line-height: 3vh;
-    }
-
-
     /*
     ?===========================================
-    ?            FOOTER: 
-    ?               h2, img, p - link
+    *            FOOTER: 
+    *               h2, img, p - link
     ?===========================================
     */
     body footer {
-        margin-top: 25vh;
+        margin-top: 15vh;
     }
 
     .img__p__link img {

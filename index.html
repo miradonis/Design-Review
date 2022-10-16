@@ -9,7 +9,7 @@
     <title>Design-Review</title>
 </head>
 
-<body>
+<body id="changeBgColor">
     <!-------------------------------------------
         header: (display:flex)
         nav, logo, button
@@ -31,6 +31,8 @@
         image, h1
     ------------------------------------------->
     <section id="img__heading">
+        <button onclick="bgColorBlack()" type="button">Make me black</button>
+        <button onclick="bgColorWhite()" type="button">Make me gray</button>
         <p>
             Get your design critiqued by world-class designers
         </p>
@@ -123,19 +125,27 @@
         <div>
             <h1>Critique!</h1>
             <p>
-                Fill out a short design brief to send your design for our critique! One week delivery. $480 flat rate
+                Fill out a short design brief to send your design for our critique!
+            </p>
+            <p>
+                One week delivery.
+                $480 flat rate
                 for
                 any design.
                 Money-back guarantee.
             </p>
         </div>
-        <div>
-            <img src="./assets/img/home_conversion.png" alt="">
-            <p>
-                Average conversion rate increase after a redesign based on our design critique according to reviews of
-                our customers.
-            </p>
-        </div>
+        <article>
+            <img class="pic__28" src="./assets/img/28.png" alt="">
+            <div>
+                <img src="./assets/img/home_conversion.png" alt="">
+                <p>
+                    Average conversion rate increase after a redesign based on our design critique according to reviews
+                    of
+                    our customers.
+                </p>
+            </div>
+        </article>
     </section>
     <!-------------------------------------------------
         FOOTER:
@@ -150,6 +160,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
