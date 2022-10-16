@@ -65,8 +65,16 @@ h3 {
 ! zentrieren vom button funktioniert nicht
 * body bg-color ändern bei click
 */
+.btn__changeBgColor {
+    display: flex;
+    justify-content: center;
+    gap: 10px 10px;
+    margin: 5vh auto 10vh auto;
+}
+
 #img__heading button {
-    margin: 0 auto 5vh auto;
+    padding: .2% 6%;
+    font-size: 2rem;
 }
 
 .bg__black {
